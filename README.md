@@ -12,7 +12,7 @@ This is the second project from Udacity professional web developer track.
 3. The **weather data** returned from **'openweathermap.com'** is sent to the website server using a **'post'** route then a **'get'** route is used to get the data from server to update the website UI.
 
 ### Css file
-The **'styles.css'** contains the style sheet which holds the styles of different elements.
+The **'styles.css'** is the style sheet which holds the styles of different elements.
 
 ### JavaScript file
 1. The **'server.js'** creates the server and its dependencies, and contains definitions of **post** and **get** routes.
