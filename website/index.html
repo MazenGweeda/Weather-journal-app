@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- sets the type of the document as html-->
+
+<html lang="en"><!-- sets the language of the html page-->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- change the viewport width to the device screen width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" id='pageViewport'> 
+
+    <!-- set the title of my page   -->
+    <title Weather journal App></title> 
+
+    <!-- loading the style sheet at the beginnig while the java script should be at the end of html-->
+    <link href ="styles.css" rel="stylesheet">
+
+    <!-- change the title icon-->
+    <link rel="shortcut icon" href="resources/weather_icon.ico">
+
+</head>
+
+<body>
+    <header>
+        The Weather Journal App
+    </header>
+
+   
+    <!-- this is where the user enter zip code or city name-->
+    <div class="div">
+
+        <p>Enter Zip code or city name:</p>
+        <textarea id="zip" style="width: 30vw; height: 20px;" 
+        placeholder="Enter zip code or city name here..."></textarea>
+   
+    </div>
+
+    <!-- this is where the user enter his feelings today-->
+    <div class="div">
+
+        <p> How are you feeling today? </p>
+         <textarea id="feelings" style="width: 50vw;height: 100px;"
+         placeholder="Enter how you feel today here..."></textarea>
+
+    </div>
+
+    <!--this contains the result returned from the server-->
+    <div id="entryHolder">
+        <div style="margin: 0px auto 10px auto; font-size: xx-large; font-weight: 800; text-decoration: underline ;">Result</div>
+        <div id="date"></div>
+        <div id="city"></div>
+        <div id="temp"></div>
+        <div id="realFeel"></div>
+        <div id="description"></div>
+        <div id="content"></div>
+    </div>
+ 
+    <!--when clicked 'fetch' data from weather api then 'post' it to server then 'get' it from server and update website UI-->
+    <button id="generate" >Generate</button>
+
+</body>
+
+<!-- load the script file at the end to allow all elements to be created before apply fuctions on them-->
+<script src="app.js"></script>
+
+</html>

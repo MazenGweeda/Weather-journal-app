@@ -1,0 +1,90 @@
+header{
+    font-size: 200%;
+    text-align: center;
+    background-color:#6ef7fe;
+    padding: 10px 0px 10px 0px ;
+    font-weight: 900;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+body{
+    background-image: url('resources/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: fit-content;
+
+}
+
+textarea{
+    margin-left: 3%;
+}
+
+.div{
+    margin: 3% auto 5% 2%;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* disable when zip textarea or feelings textarea are empty*/
+.buttonDisabled{
+    background-image: url("resources/button_disabled.png");
+    color: whitesmoke;
+    opacity: 0.6;
+}
+
+/* enable when zip textarea and feelings textarea contain text*/
+.buttonEnabled{
+    background-image: url("resources/button.png");
+    color: whitesmoke;
+}
+
+/* add simple effect upon pressing the button*/
+.pressed{
+scale: 0.95;
+}
+
+/* the generate button*/
+#generate{
+    width: 20%;
+    height: 100px;
+    margin: 80px 40% auto 40%;
+    font-size: 3vw;
+    font-weight: 900;
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: none;
+}
+
+/* the result box general style*/
+#entryHolder{
+    background-color: #6ef7fe;
+    border-radius: 5px;
+    border: 3px black solid;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 150%;
+}
+
+/* the result box style when screen width less than 700px*/
+@media only screen and (max-width: 700px) {
+    #entryHolder{
+    position: static;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    }
+  }
+
+  /* the result box style when screen width higher than 700px*/
+  @media only screen and (min-width: 700px) {
+    #entryHolder{
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    width: fit-content;
+    height: fit-content;
+    }
+  }
